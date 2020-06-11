@@ -15,6 +15,7 @@ public class BackendService {
         Long id = 42L;
 
         employees = new ArrayList<>();
+        for (int i=0; i < 100; i++) {
         employees.add(new Employee(id++, "Rowena", "Leeming", "rleeming0@bbc.co.uk", "Food Chemist"));
         employees.add(new Employee(id++, "Alvinia", "Delong", "adelong1@altervista.org", "Recruiting Manager"));
         employees.add(new Employee(id++, "Leodora", "Burry", "lburry2@example.com", "Food Chemist"));
@@ -37,6 +38,7 @@ public class BackendService {
         employees.add(new Employee(id++, "Glenn", "Bangley", "gbangleyj@prlog.org", "Account Executive"));
         employees.add(new Employee(id++, "Isidoro", "Glave", "iglavek@tamu.edu", "Compensation Analyst"));
         employees.add(new Employee(id++, "Cchaddie", "Spatarul", "cspatarull@sun.com", "Business Systems Development Analyst"));
+        }
     }
 
     public List<Employee> getEmployees() {
